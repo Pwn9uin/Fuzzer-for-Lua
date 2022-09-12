@@ -1,6 +1,6 @@
 # 1. About Token Level Fuzzer
 
-이 퍼저는 USENIX에서 발표된 Token Level Fuzzer에 관한 아이디어를 바탕으로 AFL 퍼저에 접목하여 Lua 프로그램을 대상으로 퍼징을 동작할 수 있도록 자체 제작한 퍼저 입니다.
+이 퍼저는 USENIX에서 발표된 Token Level Fuzzer에 관한 아이디어를 바탕으로 AFL 퍼저에 접목하여 Lua 프로그램을 대상으로 퍼징을 동작할 수 있도록 자체 제작한 퍼저다.
 
 - [USENIX Token Level Fuzzzer](https://www.usenix.org/conference/usenixsecurity21/presentation/salls#:~:text=Instead%20of%20applying%20mutations%20either,conform%20strictly%20to%20the%20grammar)
 
@@ -11,7 +11,7 @@
 
 ## 2.1 Token Level Fuzzer에 관한 아이디어
 
-Token Level에 대한 자세한 아이디어는 위에서 언급한 USENIX ‘Token-Level-Fuzzer’를 참고하고, Lua에 맞게 제작하고 수정하는 과정을 거치며 만들어진 동작과정에 대해 간단하게 말하면 다음과 같습니다.
+Token Level에 대한 자세한 아이디어는 위에서 언급한 USENIX ‘Token-Level-Fuzzer’를 참고하고, Lua에 맞게 제작하고 수정하는 과정을 거치며 만들어진 동작과정에 대해 간단하게 말하면 다음과 같다.
 
 1. AFL 퍼저에서 input 파일을 읽어오기 직전, lua 인터프리터의 input인 lua script 파일을 encode하여 바이너리 형태로 만들고 해당 바이너리를 AFL 퍼저의 input파일로 전달한다.
 2. AFL mutation을 통해 전달받은 바이너리를 mutation한다.
