@@ -7,6 +7,9 @@
 
 - [AFL-FUZZER](https://github.com/google/AFL)
 
+위 token 폴더내에 token level 퍼저의 소스코드가 들어있으며, AFL 코드에서 내가 추가적으로 직접 작성한 부분은 TokenParse.h와 token이며, 해당 해더의 함수를 사용하기 위해 afl-fuzz.c 의 일부를 수정하였다.
+
+
 # 2. 동작 과정
 
 ## 2.1 Token Level Fuzzer에 관한 아이디어
